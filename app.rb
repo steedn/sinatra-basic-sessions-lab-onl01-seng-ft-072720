@@ -2,10 +2,10 @@ require_relative 'config/environment'
 
 class App < Sinatra::Base
   configure do
-    enable :sessions 
+    enable :sessions
     set :session_secret, "77724board"
   end
   get '/' do
-    erb :index 
+    erb :index
   end
 end
